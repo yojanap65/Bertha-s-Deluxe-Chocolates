@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 				Name: 				Yojana Vilas Patil
+					Class Account #:	jadrn047
+					REDID:				819676514
+					Project #4									-->
+<head>
+<title>Welcome to Bertha's Deluxe Chocolates</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <script type="text/javascript" src="/jquery/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="proj1.css"/>
+<link rel="stylesheet" type="text/css" href="order.css"/>
+ <script type="text/javascript" src="shopping_cart.js"></script>
+    <script type="text/javascript" src="proj4_example.js"></script> 
+</head>
+<body>
+<div class="banner">
+	<div class="header">
+		<img class="flag" alt="flag_image" src="images/logoo.jpg"/>
+		<div class="header-text">
+			<h1>Bertha's Deluxe Chocolates</h1>
+			 <!-- <h2>Welcome To Lisbon, Portugal </h2> -->
+		</div>
+	</div>
+	<div class="clearfix">
+	</div>
+	<div class="main-menu">
+		<div class="sub-menu">
+			<ul class="tabs">				
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li class="active"><a href="orderonline.html">Order Online</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id ="check">
+
+<input type="button" class="button" id="checkout" value= "Checkout" />
+
+</div>
+	<div id="cart"></div>
+	<!-- The order form is not visible until the Order Now button is clicked -->
+<div id="ordernow">
+<form method="post" action="/perl/jadrn047/proj4/read_cookie.cgi"> 
+ <fieldset>
+               <legend><b>Enter Personal Information</legend>
+			<ul>
+                  <li><label class="grid" >Name<span>*</span></label>
+                     <input type="text" id="fname" name="fname" size="40" class='required' autofocus="autofocus" />
+                  </li>
+				  <li><label class="grid" >Email Address<span>*</span></label>
+                     <input type="text" id="email" name="email" size="25" class='required'/>
+                  </li>
+				    <li><label class="grid" >Phone<span>*</span></label>
+                     <input type="text" id="phone" name="phone" size="10" class='required'/>
+                  </li>
+				  </ul>
+				   </fieldset>
+				   <fieldset>
+               <legend>Enter Delivery Address</legend>
+			   <ul>
+				    <li><label class="grid" >Address1<span>*</span></label>
+                     <input type="text" id="address" name="address" size="40" class='required'/>
+                  </li>
+				    <li><label class="grid" >Address2(optional)</label>
+                     <input type="text" id="address2" name="address2" size="40" />
+                  </li>
+				<li>
+                     <label class="grid" >City<span>*</span></label>
+                     <input type="text" id="city"  name="city" size="25" class='required'/> 
+                  </li>
+                
+                  <li>
+                     <label class="grid" >State<span>*</span></label>
+                     <input type="text" id="state"  name="state" size="2"> 
+                  </li>
+                
+                  <li>
+                     <label class="grid" >Zipcode<span>*</span></label>
+                     <input type="text" id="zipcode" name="zipcode" size="5" maxlength="5" class='required'/>
+                  </li>
+                  
+               </ul>
+            </fieldset>
+			<fieldset>
+               <legend>Make Payment</legend>
+			   <ul>
+			   
+			   
+			    <li>
+      <label class="grid" >Credit Card #:<span>*</span></label>
+    <input type="text" id="credit" name="credit" value="" size="19" maxlength="40" class='required'/>
+	</li>
+	
+			    <li>
+      <label class="grid" >Expiry Date:<span>*</span></label>
+      <SELECT NAME="CCExpiresMonth" >
+        <OPTION VALUE="" SELECTED>--Month--
+        <OPTION VALUE="01">January (01)
+        <OPTION VALUE="02">February (02)
+        <OPTION VALUE="03">March (03)
+        <OPTION VALUE="04">April (04)
+        <OPTION VALUE="05">May (05)
+        <OPTION VALUE="06">June (06)
+        <OPTION VALUE="07">July (07)
+        <OPTION VALUE="08">August (08)
+        <OPTION VALUE="09">September (09)
+        <OPTION VALUE="10">October (10)
+        <OPTION VALUE="11">November (11)
+        <OPTION VALUE="12">December (12)
+      </SELECT> -
+      <SELECT NAME="CCExpiresYear">
+        <OPTION VALUE="" SELECTED>--Year--
+        <OPTION VALUE="04">2004
+        <OPTION VALUE="05">2005
+        <OPTION VALUE="06">2006
+        <OPTION VALUE="07">2007
+        <OPTION VALUE="08">2008
+        <OPTION VALUE="09">2009
+        <OPTION VALUE="10">2010
+        <OPTION VALUE="11">2011
+        <OPTION VALUE="12">2012
+        <OPTION VALUE="13">2013
+        <OPTION VALUE="14">2014
+        <OPTION VALUE="15">2015
+      </SELECT>
+   </li>
+   
+				<li>
+                     <label class="grid" >CVV<span>*</span></label>
+                     <input type="text" id="cvv" name="cvv" size="3" maxlength="3" placeholder="XXX" class='required'/>
+                  </li>
+				  
+				  <li>
+                     <label class="grid" >Name on Card<span>*</span></label>
+                     <input type="text" id="cardname" name="cardname" size="40" class='required'/>
+                  </li>
+                  
+			   </ul>
+			    </fieldset>
+        <div id="button_panel">  
+                  <input type="reset"  class="button"/>
+                  <input type="submit" class="button" value="Submit Order" />		   
+               </div>
+			   <div id="error_message"></div>
+               <div id="home1"><a href="index.html" id="home" >Go To Home</a></div>
+    
+</form>  
+</div>     
+
+</div>
+	
+	
+	
+
+	<div class="footer">
+		<p>
+			Project by Yojana
+		</p>
+	</div>
+</div>
+</body>
+</html>

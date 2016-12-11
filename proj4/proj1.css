@@ -1,0 +1,199 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color : #E9C2A6;	
+}
+
+h1 {
+	padding-top : 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color:#8B0000;
+	font-size:3em;
+}
+h2 {
+	padding-top : 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color:#8B0000;
+	font-size:1em;
+}
+h3 {
+	padding-top : 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color:black;
+	font-size:1em;
+}
+
+.flag {
+	width: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	cursor: pointer;
+}
+	
+.banner {
+	width: 100%;
+	min-height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+
+.tabs {
+	/*display: block;?*/
+    clear: both;
+    text-align: center;
+	align: center;
+}
+
+.main-menu { 
+	background: #97694F; 
+	width: 100%;
+/*	position: absolute;	 */
+	font-weight: bold;
+	align: center
+
+}
+
+.sub-menu { 
+	overflow: hidden;	
+}
+
+ 
+.sub-menu ul { 
+	/*width: 100%; */
+	list-style: none;
+	display: table;
+	margin: auto;
+}
+.sub-menu ul li { 
+	list-style: none; 
+	float: left; 
+	padding: 15px; 
+	display: inline; 
+}
+
+.sub-menu ul li a {
+	margin: 10px 0;
+	padding: 10px;
+	color: #FFF;
+	font-family: verdana;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.sub-menu ul li:hover, .active { 
+	background-color:#FFA07A;
+}
+
+
+.img1 {
+	width:350px;
+	height:250px;	
+}
+
+.img2 {
+	width:350px;
+	height:250px;
+}
+
+.img3 {
+	width:350px;
+	height:250px;
+}
+
+#content { 
+	margin: auto;
+	display: table;	
+}
+
+#content img{		
+    padding: 5px 5px 5px 5px;
+	border-radius: 25px;
+	margin: auto;
+}
+#table-division {  
+	padding-top:200px;
+	padding-left:300px;
+	padding-right: 100px;
+}
+table {
+    border-collapse: collapse;
+	margin : auto;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+#table-division img {
+	border: 3px solid black;
+	height: 100;
+	width :150;
+}
+
+p { 
+	padding-top:10px;
+	padding-left:300px;
+}
+
+#aboutus {
+	padding-top:150px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+}
+.contact {
+	padding-top : 30px;
+	font-size:2em;
+	
+}
+
+#individual-content img {
+	width: 375px;
+	float: left;
+	margin-right: 30px;
+	box-shadow: 2px 2px 2px grey;
+}
+
+#individual-content{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#counter {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 100%;
+	 border: 2px solid black;
+	 margin-left: 5%;
+	margin-right: 5%;
+    }
+
+#content span{
+	display: none;
+}
+
+#nav {
+	float :left;
+	width: 20%;
+	display : inline;
+	
+}	
+ 
